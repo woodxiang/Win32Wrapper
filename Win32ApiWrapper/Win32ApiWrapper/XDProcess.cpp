@@ -1,0 +1,5 @@
+#include "stdafx.h"
+#include "Exceptions.h"
+#include "SecurityAttribute.h"
+#include "XDHandle.h"
+#include "XDProcess.h"
