@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Win32ApiWrapper/.vs/Win32ApiWrapper/v14/.suo
+/Win32ApiWrapper/ipch
+/Win32ApiWrapper/Win32ApiWrapper/x64/Debug
+/Win32ApiWrapper/x64/Debug
+/Win32ApiWrapper/Win32ApiWrapper.sdf
+/Win32ApiWrapper/Win32ApiWrapper.VC.opendb
+/Win32ApiWrapper/Win32ApiWrapperUnitTest/x64/Debug

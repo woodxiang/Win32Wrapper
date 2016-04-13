@@ -85,6 +85,9 @@ public:
 		SetHandle(hHandle);
 	}
 	~XDFileMapping() {}
+
+public:
+	static const XDFileMapping InvalidFileMapping;
 };
 
 enum class FileMappingViewAccess :DWORD

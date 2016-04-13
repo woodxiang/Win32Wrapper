@@ -93,6 +93,7 @@ public:
 		SetHandle(hHandel);
 	}
 
+	XDThread(HANDLE hThread) :XDHandle(hThread) {}
 	XDThread(XDThread& other) :XDHandle(other) {}
 	XDThread(XDThread&& other) :XDHandle(other) {}
 	XDThread(ThreadAccess desiredAccess, bool isInheritHandle, DWORD dwThreadId)
@@ -106,6 +107,9 @@ public:
 	}
 
 	~XDThread() {}
+
+public:
+	static const XDThread InvalidThread;
 
 public:
 
@@ -154,6 +158,7 @@ public:
 		SetHandle(hHandle);
 	}
 
+	XDProcess(HANDLE hProcess) :XDHandle(hProcess) {}
 	XDProcess(XDProcess& other) :XDHandle(other) {}
 	XDProcess(XDProcess&& other) :XDHandle(other) {}
 
@@ -167,7 +172,7 @@ public:
 		SetHandle(hHandle);
 	}
 
-	XDProcess(std::wstring strApplicationName,
+	XDProcess(std::wstring& strApplicationName,
 		std::wstring& strCommandLine,
 		SecurityAttributes processAttribute,
 		SecurityAttributes threadAttribute,
@@ -178,11 +183,12 @@ public:
 		StartupInfoEx startupInfo,
 		XDThread& targetThread)
 	{
-
 	}
 
-
 	~XDProcess() {}
+
+public:
+	static const XDProcess InvalidProcess;
 
 public:
 	inline static DWORD GetCurrentProcessId()

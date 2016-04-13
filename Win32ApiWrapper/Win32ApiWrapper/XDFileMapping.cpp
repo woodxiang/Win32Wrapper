@@ -4,3 +4,5 @@
 #include "XDHandle.h"
 #include "XDFile.h"
 #include "XDFileMapping.h"
+
+const XDFileMapping XDFileMapping::InvalidFileMapping = 0;
